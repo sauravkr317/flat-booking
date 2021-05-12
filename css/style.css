@@ -1,23 +1,7 @@
 @import url("./responsive.css");
+@import url("./global.css");
 
-*{
-    margin: 0; padding: 0;
-    box-sizing: border-box;
-}
 
-html{
-    font-size: 16px;
-    -webkit-font-smoothing: antialiased;
-}
-
-body{
-    font-family: 'Roboto', sans-serif;
-}
-
-.container{
-    max-width: 90%;
-    margin: 0rem auto;
-}
 
 nav{
     display: flex;
@@ -33,14 +17,6 @@ nav{
 
 }
 
-.input-group{
-    border: 1px solid #D9DDE7;
-    padding: 0.5rem 0.8rem;
-    margin-left: 1.4rem;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-}
 
 .container div.left-group div.input-group input{
     border: none;
@@ -229,12 +205,34 @@ footer .container{
 
 .input-group.footer{
     margin-left: 0rem;
-    margin: 1rem 0rem;
+    margin-top: 1rem;
+    cursor: pointer;
 }
 
-.input-group.footer input{
-    border: none;
-    outline: none;
+.footer-wrapper ul.footer-ul{
+    display: none;
+}
+
+.footer-wrapper ul.show{
+    display: block;
+    list-style-type: none;
+    text-align: left;
+    text-transform: capitalize;
+    border: 1px solid #D9DDE7;
+    border-radius: 4px;
+}
+
+.footer-wrapper ul li{
+    cursor: pointer;
+    font-weight: 400;
+    color: #596172;
+    font-size: .8rem;
+    padding: .3rem .5rem;
+}
+
+.input-group.footer h6{
+    font-weight: 400;
+    color: #2B313D;
 }
 
 .input-group.footer i{
@@ -247,6 +245,7 @@ footer .container{
 
 .footer-meta{
     text-transform: capitalize;
+    padding-top: 1rem;
 }
 
 .footer-meta a{
@@ -268,7 +267,7 @@ footer .container{
     color: #949FB7;
     font-weight: 400;
     text-transform: capitalize;
-    font-size: 1rem;
+    font-size: .9rem;
 }
 
 .aboutus ul{
@@ -282,8 +281,9 @@ footer .container{
 
 .aboutus ul li a{
     text-decoration: none;
-    color:#2B313D;
+    color:#596172;
     font-weight: 400;
+    font-size: .9rem;
 }
 
 .hero_image-block{

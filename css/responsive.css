@@ -126,10 +126,7 @@
         justify-content: center!important;
     }
 
-    .input-group.footer{
-        width: 50%!important;
-    }
-    .input-group.footer input{
-        width: 100%!important;
+    .input-div{
+        width: 60%!important;
     }
 }
